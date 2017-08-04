@@ -1,0 +1,75 @@
+/*--------*/
+/* Global */
+/*--------*/
+
+html {
+    // Allows for rems to size similar to px
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #fff;
+    font: 14px / 1.5 $open-sans;
+    font-size: 1.4rem;
+    -webkit-font-smoothing: subpixel-antialiased;
+    
+    @include breakpoint($size-md) {
+        font-size: 1.8rem;
+        line-height: 2;
+    }
+}
+
+main {
+    display: block;
+    
+    > section, > .pz-section {
+        &:first-child, &.pz-normal-padding-top:first-child {
+            padding-top: $nav-height + $space-unit;
+        }
+        
+        &.pz-no-padding-top:first-child {
+            padding-top: $nav-height;
+        }
+        
+        &.pz-large-padding-top:first-child {
+            padding-top: $nav-height + ($space-unit * 2);
+        }
+    }
+    
+    > .pz-section.pz-carousel:first-child {
+        padding-top: 0;
+        
+        .pz-carousel-slide {
+            padding-top: $nav-height;
+        }
+    }
+    
+    ul, ol {
+        margin-left: $space-unit;
+    }
+}
+
+section {
+    position: relative;
+    padding: $space-unit 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &.pz-no-padding-top {
+        padding-top: 0;
+    }
+    
+    &.pz-no-padding-bottom {
+        padding-bottom: 0;
+    }
+    
+    &.pz-large-padding-top {
+        padding-top: $space-unit * 2;
+    }
+    
+    &.pz-large-padding-bottom {
+        padding-bottom: $space-unit * 2;
+    }
+}

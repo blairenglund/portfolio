@@ -1,0 +1,55 @@
+/*------------*/
+/* Pagination */
+/*------------*/
+
+.pagination {
+    @include display-flex;
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+    
+    @include breakpoint($size-md) {
+        @include justify-content(flex-start);
+    }
+}
+
+.page-numbers {
+    @include flex(0 1 auto);
+    margin: 0.2rem 0.2rem;
+    padding: 0.5rem 0.7rem;
+    border: solid 1px $medium-gray;
+    color: $medium-gray;
+    text-decoration: none;
+    
+    &.current {
+        background-color: $medium-gray;
+        color: #fff;
+    }
+    
+    &.dots {
+        border-color: transparent;
+    }
+    
+    &.disabled {
+        cursor: not-allowed;
+    }
+    
+    @include breakpoint($size-md) {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+a.page-numbers {
+    border-color: transparent;
+    background-color: $light-gray;
+    
+    &:hover, &:focus {
+        background-color: #555;
+        color: #fff;
+    }
+    
+    &:active {
+        background-color: #333;
+        color: #fff;
+    }
+}

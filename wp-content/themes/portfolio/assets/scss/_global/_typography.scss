@@ -1,0 +1,144 @@
+/*------------*/
+/* Typography */
+/*------------*/
+
+h1, h2, h3, h4, h5, h6, p, li, th, td {
+    font-family: $open-sans;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    &:first-child {
+        margin-top: 0;
+    }
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol {
+    margin: $text-space-unit 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: $text-space-unit * 2;
+    font-weight: $semibold;
+    line-height: 1.2;
+    
+    + h1, + h2, + h3, + h4, + h5, + h6 {
+        margin-top: $text-space-unit;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h5 {
+    font-size: 1.4rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+p, li, th, td {
+    font-size: 1.4rem;
+}
+
+p, li, td {
+    font-weight: $normal;
+}
+
+p, li {
+    line-height: 1.75;
+}
+
+p {
+    margin: ($text-space-unit * 2) 0;
+}
+
+li {
+    margin: ($text-space-unit / 2) 0;
+}
+
+small {
+    font-size: 80%;
+}
+
+pre {
+    padding: $text-space-unit;
+    background-color: $light-gray;
+}
+
+hr {
+    margin: ($text-space-unit * 2) 0;
+    border: 0;
+    border-bottom: solid 1px $medium-gray;
+}
+
+a {
+    @extend %default-transition;
+}
+
+@include breakpoint($size-md) {
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: $text-space-unit * 3;
+    }
+    
+    h1 {
+        font-size: 5rem;
+    }
+    
+    h2 {
+        font-size: 4rem;
+    }
+    
+    h3 {
+        font-size: 2.6rem;
+    }
+    
+    h4 {
+        font-size: 2.2rem;
+    }
+    
+    h5 {
+        font-size: 1.8rem;
+    }
+    
+    h6 {
+        font-size: 1.4rem;
+    }
+    
+    p, li, th, td {
+        font-size: 1.8rem;
+    }
+    
+    p, li {
+        line-height: 2;
+    }
+    
+    hr {
+        margin: ($text-space-unit * 3) 0;
+    }
+}

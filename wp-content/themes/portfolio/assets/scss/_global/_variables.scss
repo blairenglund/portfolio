@@ -1,0 +1,34 @@
+//-----------//
+// Variables //
+//-----------//
+
+// Sizes for grid system and media queries
+$size-sm: 480px;
+$size-md: 660px;
+$size-lg: 850px;
+$size-xl: 1024px;
+
+// General sizes of things
+$max-width: 1200px;
+$nav-height: 7rem;
+
+$space-unit: 3rem;
+$text-space-unit: 1rem;
+
+// Font families
+$open-sans: 'Open Sans', sans-serif;
+
+// Font weights so we don't have to remember stuff like "semibold" is 600, etc.
+$hairline: 100;
+$thin: 200;
+$light: 300;
+$normal: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+// Colors~!
+$light-gray: #eee;
+$medium-gray: #aaa;

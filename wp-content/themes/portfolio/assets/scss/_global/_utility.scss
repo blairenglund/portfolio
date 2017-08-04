@@ -1,0 +1,55 @@
+/*-----------------*/
+/* Utility Classes */
+/*-----------------*/
+
+%button {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    border: solid 1px $medium-gray;
+    @extend %default-border-radius;
+    background-color: $medium-gray;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    @extend %default-transition;
+    
+    &:hover {
+        color: #fff;
+    }
+}
+
+%clearfix {
+    &::after {
+        clear: both;
+        display: table;
+        content: " ";
+    }
+}
+
+%default-border-radius {
+    border-radius: 5px;
+}
+
+%default-transition {
+    transition: all 0.4s ease;
+}
+
+%page-max-width {
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+// Hide text for screen readers
+%screen-reader-text {
+    position: absolute;
+    top: auto;
+    left: -100000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text {
+    @extend %screen-reader-text;
+}
