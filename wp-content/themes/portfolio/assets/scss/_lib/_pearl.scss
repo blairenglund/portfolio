@@ -1,0 +1,24 @@
+.pearl {
+	background: linear-gradient(242deg, #ffcc99, #fffccd, #dafff1, #d8fbff, #f6edff);
+	background-size: 100%;
+	background-blend-mode: multiply;
+	// -webkit-animation: pearl 6s ease infinite;
+	// -moz-animation: pearl 6s ease infinite;
+	// animation: pearl 6s ease infinite;
+
+	@-webkit-keyframes pearl {
+	    0%{background-position:0% 51%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 51%}
+	}
+	@-moz-keyframes pearl {
+	    0%{background-position:0% 51%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 51%}
+	}
+	@keyframes pearl { 
+	    0%{background-position:0% 51%}
+	    50%{background-position:100% 50%}
+	    100%{background-position:0% 51%}
+	}
+}
