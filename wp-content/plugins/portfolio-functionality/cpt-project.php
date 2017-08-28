@@ -15,11 +15,13 @@ function create_posttype() {
     array(
       'labels' => array(
         'name' => __( 'Projects' ),
-        'singular_name' => __( 'Project' )
+        'singular_name' => __( 'Project' ),
       ),
+      'menu_icon' => 'dashicons-format-image',
       'public' => true,
       'has_archive' => false,
       'rewrite' => array('slug' => 'projects'),
+      'show_in_rest' => true,
     )
   );
 }

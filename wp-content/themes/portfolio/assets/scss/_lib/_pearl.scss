@@ -1,10 +1,9 @@
 .pearl {
-	background: linear-gradient(242deg, #ffcc99, #fffccd, #dafff1, #d8fbff, #f6edff);
-	background-size: 100%;
-	background-blend-mode: multiply;
-	// -webkit-animation: pearl 6s ease infinite;
-	// -moz-animation: pearl 6s ease infinite;
-	// animation: pearl 6s ease infinite;
+	background: linear-gradient(225deg, #ffcc99, #fffccd, #dafff1, #d8fbff, #f6edff);
+	background-size: 200% 100%;
+	-webkit-animation: pearl 6s ease infinite;
+	-moz-animation: pearl 6s ease infinite;
+	animation: pearl 6s ease infinite;
 
 	@-webkit-keyframes pearl {
 	    0%{background-position:0% 51%}
@@ -21,4 +20,26 @@
 	    50%{background-position:100% 50%}
 	    100%{background-position:0% 51%}
 	}
+
+	&-text {
+		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+  	}
+}
+
+.diamond {
+	background: repeating-linear-gradient(-60deg, #333, #3a3a3a 5%),
+	 			repeating-linear-gradient(60deg, #333, #3a3a3a 5%);
+	background-blend-mode: hard-light;
+}
+
+.pixel-light {
+	background: linear-gradient(225deg, #ffcc99, #fffccd, #dafff1, #d8fbff, #f6edff),
+				repeating-linear-gradient(-45deg, #fafafa, #fff 5%),
+	 			repeating-linear-gradient(45deg, #fafafa, #fff 5%);
+	background-blend-mode: multiply;
+}
+
+.spotlight {
+	background: radial-gradient(circle at center, #333 0, #000 100%);
 }
