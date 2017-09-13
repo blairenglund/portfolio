@@ -27,7 +27,6 @@ function create_posttype() {
 }
 add_action( 'init', 'create_posttype' );
 
-// ACF Fields for Projects
 
 if(function_exists("register_field_group"))
 {
@@ -94,4 +93,3 @@ if(function_exists("register_field_group"))
 }
 
 ?>
-

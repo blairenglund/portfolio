@@ -6,7 +6,7 @@ get_header();
 		<div class="dtc tc v-mid ph4 relative z-5">
 			<div class="ph2 pv1 br4">
 				<div class="animated fadeInDown">
-					<h1 class="f-headline fw2 tracked ttl lh1 mb2 white pearl pearl-text">{{ blogTitle }}</h1>
+					<h1 class="f1 f-headline-l fw2 tracked ttl lh1 mb2 white pearl pearl-text">{{ blogTitle }}</h1>
 				</div>
 				<h2 class="f3 fw6 washed-green ttu tracked mb5 animated fadeInUp">{{ blogDescription }}</h2>				
 			</div>
@@ -56,7 +56,7 @@ get_header();
                 });
             },
             getPostData() {
-                this.$http.get('/wp-json/wp/v2/pages/<?php the_id(); ?>').then(function(response) {
+                this.$http.get('/wp-json/wp/v2/pages/<?php the_id('Home'); ?>').then(function(response) {
                 	console.log(response.body)
                     this.$data.postData = response.body
                 }, function(response) {
