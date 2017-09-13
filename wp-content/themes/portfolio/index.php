@@ -17,7 +17,7 @@ get_header();
 		<div class="dtc v-mid black-70 ph4 pv4 pv6-l ph6-l mid-gray" v-html="postData.content.rendered"></div>
 	</article>
 
-	<article id="projects" class="vh-100 dt w-100 avenir v-mid bg-dark-gray">
+	<article v-if id="projects" class="vh-100 dt w-100 avenir v-mid bg-dark-gray">
 		<div class="ph4 pv4 pv6-l ph6-l">
 			<div class="mb5">
 				<h2 class="f2 tc pearl pearl-text">Recent Work</h2>
