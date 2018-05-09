@@ -1,0 +1,120 @@
+/* Text */
+
+h1, h2, h3, h4, h5, h6, th {
+    color: #333;
+}
+
+body, p, li, td {
+    color: #555;
+}
+
+/* Links */
+
+a {
+    color: #314887;
+}
+
+a:hover, a:active {
+    color: #4b97e3;
+}
+
+/* Forms */
+
+input, select, textarea {
+    border-color: #555;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #314887;
+}
+
+/* Navigation Bar */
+
+.main-nav {
+    background-color: #314887;
+    background-color: rgba(49, 72, 135, 0.9);
+}
+
+.main-nav a {
+    color: #fff;
+}
+
+#dl-menu.dl-menuwrapper button {
+    background: #314887;
+}
+
+#dl-menu.dl-menuwrapper ul,
+#dl-menu.dl-menuwrapper button.dl-active,
+#dl-menu.dl-menuwrapper button:hover,
+.main-nav__desktop-menu ul ul {
+    background: #4b97e3;
+}
+
+#dl-menu.dl-menuwrapper button:active,
+#dl-menu.dl-menuwrapper li a:hover,
+#dl-menu.dl-menuwrapper li a:active {
+    background: #314887;
+}
+
+/* Footer */
+
+.main-footer {
+    background-color: #314887}
+
+.main-footer h1, .main-footer h2, .main-footer h3, .main-footer h4, .main-footer h5, .main-footer h6 {
+    color: #fff;
+}
+
+.main-footer, .main-footer p, .main-footer li, .main-footer th, .main-footer td, .main-footer a {
+    color: #fff}
+
+/* Buttons */
+
+button,
+input[type='button'],
+input[type='submit'],
+.categories .cat-item a,
+.single-post-page-links a:hover,
+.comment-reply-link,
+a.page-numbers:hover,
+#cancel-comment-reply-link {
+    background-color: #314887;
+    border-color: #314887;
+    color: #fff;
+}
+
+button:hover,
+input[type='button']:hover,
+input[type='submit']:hover,
+.categories .cat-item a:hover,
+#cancel-comment-reply-link:hover,
+.comment-reply-link:hover {
+    background-color: #4b97e3;
+    border-color: #4b97e3;
+    color: #fff;
+}
+
+/* Blog */
+
+.puzzle-loop, .single-post-content, .single-post-content.comments-open {
+    border-color: #314887;
+}
+
+.single-post-page-links a, .page-numbers {
+    color: #555}
+
+span.page-numbers.prev, span.page-numbers.next {
+    color: rgba(85, 85, 85, 0.65);
+}
+
+/* Contact Form 7 */
+
+.wpcf7-form div.wpcf7-response-output.wpcf7-mail-sent-ok {
+    background-color: #314887;
+    background-color: rgba(49, 72, 135, 0.5);
+}
+
+.primary-background .wpcf7-form div.wpcf7-response-output.wpcf7-mail-sent-ok {
+    background-color: #4b97e3;
+    background-color: rgba(75, 151, 227, 0.5);
+}

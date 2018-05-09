@@ -49,6 +49,30 @@ function puzzle_scripts() {
         array('jquery'),
         filemtime(get_stylesheet_directory() . $dl_menu_script_location)
     );
+
+    /* Vue */
+    $vue_script_location = '/assets/js/lib/vue.min.js';
+    wp_enqueue_script(
+        'vue',
+        get_template_directory_uri() . $vue_script_location,
+        filemtime(get_stylesheet_directory() . $vue_script_location)
+    );
+
+    /* Vue Router */
+    $vueRouter_script_location = '/assets/js/lib/vue-router.js';
+    wp_enqueue_script(
+        'vue-router',
+        get_template_directory_uri() . $vueRouter_script_location,
+        filemtime(get_stylesheet_directory() . $vueRouter_script_location)
+    );
+
+    /* Vue Resource */
+    $vueResource_script_location = '/assets/js/lib/vue-resource.min.js';
+    wp_enqueue_script(
+        'vue-resource',
+        get_template_directory_uri() . $vueResource_script_location,
+        filemtime(get_stylesheet_directory() . $vueResource_script_location)
+    );
     
     /* Main script */
     $puzzle_script_location = '/assets/js/main.js';
